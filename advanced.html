@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+        li {
+            margin-right: 1em;
+        }
+        a {
+            display: inline-block;
+            padding: 0.5em 1em;
+        }
+        main {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        main form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1em;
+            width: min(100%, 400px);
+        }
+        main form h1 {
+            text-align:
+            center;
+        }
+        main form input {
+            padding: 0.5em 1em;
+            margin: 0.5em 0;
+            border-radius: .5rem;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        main form input[type="submit"] {
+            color: #fff;
+            background-color: blue;
+        }
+        main form input[type="submit"]:hover,
+        main form input[type="submit"]:focus,
+        main form input[type="submit"]:active {
+            background-color: rgba(0, 0, 255, 0.451);
+        }
+        main form .input-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        main form .input-group input {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            margin: 0.5em;
+            width: 50%;
+        }
+        main form .input-group input:hover,
+        main form .input-group input:focus,
+        main form .input-group input:active {
+            background-color: #f2f2f266;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Google search</a></li>
+            <li><a href="image.html">Image search</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="https://google.com/search" method="GET">
+            <h1>Google Search</h1>
+            <div class="input-group">
+                <label for="input_1">all these words:</label>
+                <input type="text"  name="as_q" id="input_1">
+            </div>
+            <div class="input-group">
+                <label for="input_2">this exact word or phrase:</label>
+                <input type="text" name="as_epq" id="input_2">
+            </div>
+            <div class="input-group">
+                <label for="input_3">any of these words:</label>
+                <input type="text" name="as_oq" id="input_3">
+            </div>
+            <div class="input-group">
+                <label for="input_4">none of these words:</label>
+                <input type="text" name="as_eq" id="input_4">
+            </div>
+            <input type="submit" value="Advanced Search">
+        </form>
+    </main>
+</body>
+</html>
