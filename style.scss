@@ -1,0 +1,83 @@
+$grey: #f8f9fa;
+$btn-radius: .25rem;
+$input-padding: 1em;
+$form-max-width: 500px;
+
+$colors: ('blue': '#4285f4', 'red': '#ea4335', 'green': '#34a853', 'yellow': '#fbbc05');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        list-style-type: none;
+        display: flex;
+        li {
+            margin-right: 1em;
+            a {
+                display: inline-block;
+                padding: 0.5em 1em;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1em;
+        width: min(100%, $form-max-width);
+    }
+    h1 {
+        text-align:
+        center;
+    }
+    input {
+        padding: 0.5em 1em;
+        margin: 0.5em 0;
+        border-radius: $input-padding;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        input {
+            width: 50%;
+        }
+    }
+}
+
+.btn {
+    background-color: $grey;
+    border: 1px solid $grey;
+    border-radius: $btn-radius;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: darken($grey, 20%);
+    }
+}
+
+@each $name, $color in $colors {
+    .#{$name} {
+      color: #{$color};
+    }
+  }

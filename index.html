@@ -4,69 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Search</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        nav {
-            display: flex;
-            justify-content: flex-end;
-        }
-        ul {
-            list-style-type: none;
-            display: flex;
-        }
-        li {
-            margin-right: 1em;
-        }
-        a {
-            display: inline-block;
-            padding: 0.5em 1em;
-        }
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        main form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 1em;
-            width: min(100%, 300px);
-        }
-        main form h1 {
-            text-align:
-            center;
-        }
-        main form input {
-            padding: 0.5em 1em;
-            margin: 0.5em 0;
-            border-radius: 1rem;
-            border: 1px solid #ccc;
-            width: 100%;
-        }
-        main form .input-group {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-        main form .input-group input {
-            background-color: #f2f2f2;
-            border: 1px solid #ccc;
-            border-radius: 1rem;
-            padding: 0.5em 1em;
-            margin: 0.5em;
-            width: 50%;
-        }
-        main form .input-group input:hover,
-        main form .input-group input:focus,
-        main form .input-group input:active {
-            background-color: #f2f2f266;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -77,11 +15,13 @@
     </nav>
     <main>
         <form action="https://google.com/search" method="GET">
-            <h1>Google Search</h1>
+            <h1>
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+            </h1>
             <input placeholder="search" type="text" name="q" id="q">
             <div class="input-group">
-                <input type="submit" value="Search">
-                <input type="submit" name="btnI" value="J'ai de la chance">
+                <input class="btn" type="submit" value="Search">
+                <input class="btn" type="submit" name="btnI" value="J'ai de la chance">
             </div>
         </form>
     </main>
