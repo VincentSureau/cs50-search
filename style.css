@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 h1 {
@@ -59,7 +58,7 @@ main input {
 }
 main .input-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }

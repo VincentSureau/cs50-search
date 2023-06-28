@@ -11,6 +11,17 @@ $colors: ('blue': '#4285f4', 'red': '#ea4335', 'green': '#34a853', 'yellow': '#f
 
 h1 {
     font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    text-align: right;
+    font-size: rem;
+}
+  
+.title-container {
+    margin: 2rem 0;
 }
 
 nav {
@@ -54,7 +65,7 @@ main {
     }
     .input-group {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
         input {
